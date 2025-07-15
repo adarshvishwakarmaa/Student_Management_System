@@ -89,7 +89,7 @@ All pages are accessible via the sidebar in the layout.
 
 **Adarsh Vishwakarma**  
 .NET Developer | MERN Stack Developer  
-📧 Email: *your-email@example.com*
+📧 Email: adarshvishwakarma2004@example.com*
 
 ---
 
