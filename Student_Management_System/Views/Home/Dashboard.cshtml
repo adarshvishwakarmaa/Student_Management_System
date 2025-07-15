@@ -1,0 +1,197 @@
+﻿@* <!-- Students -->
+<div class="col-lg-3 col-6">
+    <div class="small-box bg-info">
+        <div class="inner">
+            <h3>@ViewBag.StudentCount</h3>
+            <p>Total Students</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-user-graduate"></i>
+        </div>
+        <a href="@Url.Action("Index", "Student")" class="small-box-footer">
+            More info <i class="fas fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Teachers -->
+<div class="col-lg-3 col-6">
+    <div class="small-box bg-success">
+        <div class="inner">
+            <h3>@ViewBag.TeacherCount</h3>
+            <p>Total Teachers</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <a href="@Url.Action("Index", "Teacher")" class="small-box-footer">
+            More info <i class="fas fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Attendance -->
+<div class="col-lg-3 col-6">
+    <div class="small-box bg-warning">
+        <div class="inner">
+            <h3>@ViewBag.AttendanceCount</h3>
+            <p>Attendance Records</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-calendar-check"></i>
+        </div>
+        <a href="@Url.Action("Index", "Attendence")" class="small-box-footer">
+            More info <i class="fas fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Payroll -->
+<div class="col-lg-3 col-6">
+    <div class="small-box bg-danger">
+        <div class="inner">
+            <h3>@ViewBag.PayrollCount</h3>
+            <p>Payroll Entries</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-money-bill"></i>
+        </div>
+        <a href="@Url.Action("Index", "Payroll")" class="small-box-footer">
+            More info <i class="fas fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>
+ *@
+
+
+<div class="row">
+    <!-- Students -->
+    <div class="col-md-6 mb-4">
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>@ViewBag.StudentCount</h3>
+                <p>Total Students</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-user-graduate"></i>
+            </div>
+            <a href="@Url.Action("Index", "Student")" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Teachers -->
+    <div class="col-md-6 mb-4">
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h3>@ViewBag.TeacherCount</h3>
+                <p>Total Teachers</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <a href="@Url.Action("Index", "Teacher")" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Attendance -->
+    <div class="col-md-6 mb-4">
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3>@ViewBag.AttendanceCount</h3>
+                <p>Attendance Records</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <a href="@Url.Action("Index", "Attendence")" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Payroll -->
+    <div class="col-md-6 mb-4">
+        <div class="small-box bg-danger">
+            <div class="inner">
+                <h3>@ViewBag.PayrollCount</h3>
+                <p>Payroll Entries</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-money-bill"></i>
+            </div>
+            <a href="@Url.Action("Index", "Payroll")" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    .small-box {
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .small-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .small-box .inner {
+            padding: 20px;
+        }
+
+        .small-box h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .small-box p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+            color: #f4f4f4;
+        }
+
+        .small-box .icon {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 60px;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+    .small-box-footer {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #fff !important;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 0 0 15px 15px;
+        font-weight: 500;
+        transition: background 0.3s ease;
+    }
+
+        .small-box-footer:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+
+    /* Optional: Fade-in animation */
+    .small-box {
+        opacity: 0;
+        animation: fadeInUp 0.8s forwards;
+    }
+
+</style>
